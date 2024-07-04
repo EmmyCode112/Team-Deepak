@@ -1,0 +1,21 @@
+.footer {
+    background: url(banner-bg.jpg);
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+@media (max-width:768px) {
+    .footer {
+        padding-top: 25px !important;
+        padding-bottom: 5px !important;
+    }
+    .content {
+        align-items: center !important;
+        justify-content: center !important;
+
+        .text-sm {
+            text-align: center;
+            
+        }
+    }
+}

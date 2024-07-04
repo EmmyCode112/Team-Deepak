@@ -1,0 +1,45 @@
+/* .course {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.course.visible {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+.course-display {
+    transition: .5s;
+}
+@media (max-width:1029px) {
+    .filter-div {
+        width: 100% !important;
+    }
+}
+@media (max-width:879px) {
+    .filter-div {
+        width: 100% !important;
+
+    }
+}
+
+@media (max-width:768px) {
+    .course-display {
+        z-index: 1001 !important;
+    }
+    .cov {
+        z-index: 1001 !important;
+    }
+}
+@media (max-width:620px) {
+    .filter-div {
+        gap: 5px !important;
+        background-color: transparent !important;
+        color: #00000017;
+    }
+
+    .courses {
+        padding: 8px 10px !important;
+    }
+}

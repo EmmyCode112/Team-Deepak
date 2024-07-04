@@ -1,0 +1,47 @@
+/* Accordion.css */
+.accor {
+    background-color: white;
+    margin-bottom: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 200px; /* Set this to a value that is large enough to fit your expanded content */
+    overflow: hidden;
+}
+
+.accorInactive {
+    background-color: white;
+    margin-bottom: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    max-height: 56px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.rotate {
+    transform: rotate(90deg);
+    transition: .5s;
+    color: #7a6ad8;
+}
+
+.top-accor-text {
+    color: #7a6ad8 !important;
+}
+.top-accor:hover {
+    background: white !important;
+}
+
+.transition-colors, .text-inherit {
+    transition: .6s ;
+}
+.rotateY {
+    transform: rotate(-180deg);
+    transition: .5s;
+}
+
+@media (max-width:530px) {
+    .line {
+        font-weight: normal;
+        font-size: 12px;
+    }
+}

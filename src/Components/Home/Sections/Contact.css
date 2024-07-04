@@ -1,0 +1,112 @@
+.right-con { 
+    background: url(banner-bg.jpg);
+    padding: 70px 60px;
+    /* background-position: center; */
+    object-position: center;
+    border-radius: 50px;
+}
+
+.right-con form {
+    width: 90%;
+    margin: auto;
+}
+.right-con form input {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgba(249, 235, 255, 0.15);
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: 300;
+}
+.right-con form input::placeholder {
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+}
+.right-con form textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgba(249, 235, 255, 0.15);
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    height: 125px;
+}
+.right-con form textarea::placeholder {
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.right-con form button {
+    height: 50px;
+    width: 40%;
+    margin: auto;
+}
+/* .left {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+} */
+
+@media (max-width:1175px) {
+    .right-con form button {
+        width: 60% ;
+    }
+}
+@media (max-width:991px) {
+    .contact {
+        padding: 60px 60px 0 60px;
+        gap: 20px;
+    }
+    .right-con {
+        padding: 60px 50px;
+        width: 100% !important;
+    }
+
+
+    .right-con form button {
+        width: auto;
+    }
+
+    .right-con form  {
+        width: 80%;
+    }
+}
+
+@media (max-width:768px) {
+
+    .right-con {
+        padding: 60px 40px;
+        width: 100% !important;
+    }
+    .left h1{
+        width: 100%;
+    }
+
+}
+@media (max-width:615px) {
+
+    .right-con  {
+        width: 95%;
+    }
+
+    .right-con {
+        padding: 60px 20px;
+        width: 100% !important;
+    }
+
+    .right-con form  {
+        width: 95%;
+        margin: auto;
+    }
+    .contact {
+        padding: 0;
+    }
+}

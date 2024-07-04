@@ -1,0 +1,30 @@
+.flex {
+    transition: .5s;
+}
+.price {
+    transition: .5s;
+}
+.contain:hover .layer{
+    background-color: #0000005d;
+}
+.plus {
+    font-size: 0px;
+    color: white;
+}
+.contain:hover .plus {
+    font-size: 30px;
+    transition: .3s ease-out;
+}
+.contain:hover {
+    cursor: pointer;
+}
+/* .flex:hover h3 {
+    color: white;
+}
+.flex:hover .font-light {
+    color: white;
+} */
+.flex:hover .price {
+
+    transform: scale(1.1);
+}

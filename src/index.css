@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+* {
+  padding: 0;margin: 0;
+  /* font-family: 'Poppins', sans-serif; */
+  scroll-behavior: smooth;
+  /* box-sizing: border-box; */
+
+}
+body {
+  animation: zoom-IN .5s ease-in;
+  font-family: 'Poppins', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* box-sizing: border-box; */
+  /* overflow: hidden !important; */
+}
+
+.outline-none {
+  outline: none !important;
+
+}
+.grid-cols {
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+
+.media:hover {
+  background-color: #7a6ad8 !important;
+  transition: .3s;
+  >* {
+    color: white;
+  }
+}
+.wrapper-cos {
+  animation:opacity 5s ;
+}
+
+@media (max-width:768px) {
+  .product-detail, .course-display {
+    z-index: 1001 !important;
+  }
+}
+
+.App {
+  width: 100%;
+  /* box-sizing: border-box; */
+  overflow: hidden;
+  background-color: white;
+}
+
+/* .product-de {
+  transition: .5s !important;
+  backdrop-filter: blur(20px);
+  z-index: 1000 ;
+  animation: zoomIn ease-out .5s ;
+} */
+
+.course-display {
+  animation: zoomIn .3s;
+}
+.course-display.hide {
+  animation: zoomOut .3s ease-in;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+    width: 100%;
+
+  }
+  100% {
+    opacity: 1;
+    width: 0;
+    overflow: hidden;
+    }
+}
+
+@media (max-width:907px) {
+  .product-de {
+    width: 100%;
+  }
+}
+
+.add-cartBtn {
+  transition: .3s;
+  opacity: .9 !important;
+}
+.add-cartBtn:hover {
+  opacity: 1 !important;
+  
+}
+
+@media (max-width:768px) {
+  .cate {
+    width: auto ;
+  }
+}
+.product-detail.show {
+  animation: zoomIn .3s ease-out;
+}
+
+
+/* .product-detail {
+  transition: .5s !important;
+  animation: zoomOut .3s step-end;
+} */
+.grid-col-3 {
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+@keyframes zoom-IN {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color : inherit;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
